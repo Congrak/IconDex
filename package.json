@@ -1,0 +1,60 @@
+{
+  "name": "icondex",
+  "description": "Icondex - Find the right icon for your project",
+  "author": "Rodrigo Celis <github: Congrak>",
+  "main": "dist/index.ts",
+  "version": "0.0.5",
+  "module": "build/index.esm.js",
+  "source": "src/index.ts",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Congrak/IconDex.git"
+  },
+  "scripts": {
+    "build-storybook": "storybook build",
+    "build": "tsc && vite build && rollup -c",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "storybook": "storybook dev -p 6006"
+  },
+  "dependencies": {
+    "@storybook/theming": "^8.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.4.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/addon-essentials": "^8.1.2",
+    "@storybook/addon-interactions": "^8.1.2",
+    "@storybook/addon-links": "^8.1.2",
+    "@storybook/addon-onboarding": "^8.1.2",
+    "@storybook/blocks": "^8.1.2",
+    "@storybook/react": "^8.1.2",
+    "@storybook/react-vite": "^8.1.2",
+    "@storybook/test": "^8.1.2",
+    "@svgr/rollup": "^8.1.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-storybook": "^0.8.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "storybook": "^8.1.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
