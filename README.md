@@ -1,4 +1,4 @@
-![IconDex](https://icondex.vercel.app)
+![IconDex](public/logo.png)
 
 # IconDex
 
@@ -18,7 +18,7 @@ IconDex is an open-source icon library published on npm, designed to provide dev
 
 ### Where can i see the icons?
 
-You can view the icons and explore their usage in the ![IconDex Storybook]((https://icondex.vercel.app)).
+You can view the icons and explore their usage in the [IconDex Storybook]((https://icondex.vercel.app)).
 
 ### Install
 
