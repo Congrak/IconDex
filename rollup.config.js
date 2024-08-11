@@ -6,21 +6,34 @@ import svgr from "@svgr/rollup";
 import { config } from "dotenv";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import packageJson from "./package.json";
+import copy from 'rollup-plugin-copy';
 
 config();
 
 export default {
   input: packageJson.source,
-  plugins: [peerDepsExternal(), json(), svgr({ icon: true }), resolve(), commonjs(), typescript()],
+  plugins: [
+    peerDepsExternal(),
+    json(),
+    svgr({ icon: true }),
+    resolve(),
+    commonjs(),
+    typescript(),
+    copy({
+      targets: [
+        { src: 'src/Icons/**/*', dest: 'dist/Icons' }
+      ]
+    })
+  ],
   output: [
     {
-      file: packageJson.main,
-      format: "cjs",
+      dir: 'dist',
+      format: 'esm',
       sourcemap: true,
     },
     {
-      file: packageJson.module,
-      format: "esm",
+      dir: 'dist/cjs',
+      format: 'cjs',
       sourcemap: true,
     },
   ],
