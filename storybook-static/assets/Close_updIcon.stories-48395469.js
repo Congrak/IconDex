@@ -1,7 +1,0 @@
-import{j as s}from"./jsx-runtime-6278a575.js";import{P as o}from"./index-d765e9f1.js";import"./index-453e6029.js";const r=({height:t=100,width:l=100,color:p="#000000"})=>s.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:l,height:t,viewBox:"0 0 20 20",fill:"none",children:s.jsx("path",{d:"M10.0007 11.2178L15.4492 16.6663L16.6673 15.4481L11.2188 9.99968L16.6673 4.55124L15.4492 3.33309L10.0007 8.78153L4.55214 3.33301L3.33398 4.55116L8.78254 9.99967L3.33398 15.4482L4.55214 16.6663L10.0007 11.2178Z",fill:p})});r.propTypes={height:o.number,width:o.number,color:o.string};try{r.displayName="CloseUpdIcon",r.__docgenInfo={description:"",displayName:"CloseUpdIcon",props:{height:{defaultValue:{value:"100"},description:"",name:"height",required:!1,type:{name:"number"}},width:{defaultValue:{value:"100"},description:"",name:"width",required:!1,type:{name:"number"}},color:{defaultValue:{value:"#000000"},description:"",name:"color",required:!1,type:{name:"string"}}}}}catch{}const m={title:"Icons/Close_updIcon",component:r,parameters:{layout:"centered"},tags:["autodocs"]},e={args:{height:100,width:100,color:"#A4A4A4"}};var a,n,i;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`{
-  args: {
-    height: 100,
-    width: 100,
-    color: "#A4A4A4"
-  }
-}`,...(i=(n=e.parameters)==null?void 0:n.docs)==null?void 0:i.source}}};const h=["Default"];export{e as Default,h as __namedExportsOrder,m as default};

@@ -21,7 +21,8 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "outDir": "./dist",
   },
   "exclude": ["dist", "build", "node_modules", "storybook-static", "rollup.config.js"]
 }
