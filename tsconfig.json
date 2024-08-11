@@ -6,7 +6,7 @@
     "skipLibCheck": true,
     "declaration": true,
     "declarationMap": false,
-    "declarationDir": "./dist/types",
+    "declarationDir": "dist/definitions",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -19,10 +19,10 @@
     "emitDeclarationOnly": true,
     "jsx": "react",
     "sourceMap": true,
+    "outDir": "dist",
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "strictNullChecks": true,
-    "outDir": "./dist",
+    "strictNullChecks": true
   },
   "exclude": ["dist", "build", "node_modules", "storybook-static", "rollup.config.js"]
 }

@@ -3,10 +3,10 @@
   "description": "Icondex - Find the right icon for your project",
   "author": "Rodrigo Celis <github: Congrak>",
   "main": "dist/index.ts",
-  "module": "dist/index.esm.js",
+  "module": "build/index.esm.js",
   "source": "src/index.ts",
-  "types": "dist/types/index.d.ts",
-  "version": "1.0.11",
+  "types": "dist/index.d.ts",
+  "version": "1.0.13",
   "license": "MIT",
   "files": [
     "dist"
