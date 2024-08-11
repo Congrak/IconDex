@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-
 import { IconsProps } from '../types';
+import React from 'react';
 
 export const PhoneIcon = ({ height = 100, width = 100, color = '#000000' }: IconsProps) => {
 

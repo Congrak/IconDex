@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
-
-
 import { IconsProps } from '../types';
+import React from 'react';
 
 export const PaypalCardIcon = ({ height = 100, width = 100 }: IconsProps) => {
   return (

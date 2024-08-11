@@ -1,15 +1,20 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import { IconsProps } from "../types";
+import React from "react";
 
-
-
-import { IconsProps } from '../types';
-
-export const FileIcon = ({ height = 100, width = 100, color = '#000000' }: IconsProps) => {
-  
-
-
+export const FileIcon = ({
+  height = 100,
+  width = 100,
+  color = "#000000",
+}: IconsProps) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 19 18" fill="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 19 18"
+      fill="none"
+    >
       <g id="Icon / Outlined / File">
         <path
           id="Vector"

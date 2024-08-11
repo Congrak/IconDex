@@ -3,12 +3,8 @@ import json from "@rollup/plugin-json";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import svgr from "@svgr/rollup";
-import { config } from "dotenv";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import packageJson from "./package.json";
-import copy from 'rollup-plugin-copy';
-
-config();
 
 export default {
   input: packageJson.source,
@@ -18,23 +14,21 @@ export default {
     svgr({ icon: true }),
     resolve(),
     commonjs(),
-    typescript(),
-    copy({
-      targets: [
-        { src: 'src/Icons/**/*', dest: 'dist/Icons' }
-      ]
-    })
+    typescript({
+      tsconfig: "./tsconfig.json",
+      declaration: true,
+      declarationDir: './dist/types',
+      rootDir: './src',
+      emitDeclarationOnly: true,
+    }),
   ],
   output: [
     {
       dir: 'dist',
-      format: 'esm',
+      format: "esm",
       sourcemap: true,
-    },
-    {
-      dir: 'dist/cjs',
-      format: 'cjs',
-      sourcemap: true,
-    },
+      preserveModules: true,
+      preserveModulesRoot: 'src',
+    }
   ],
 };
